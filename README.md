@@ -1,4 +1,3 @@
 # Personal Website
 
-This website is based on the Pixyll theme! Check it out here:
-https://github.com/johno/pixyll
+My personal website! Also why are you here lol...
