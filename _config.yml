@@ -7,7 +7,7 @@ baseurl:     ""
 url:         "https://kiransur.github.io"
 date_format: "%b %-d, %Y"
 header_pages:
- - index.html
+ - reading.md
  - writing/index.html
  - projects.md
 
@@ -16,7 +16,7 @@ animated:             false
 show_related_posts:   false
 show_post_footers:    false
 enable_mathjax: false
-extended_fonts: false
+extended_fonts: true
 enable_anchorjs: false
 
 text:

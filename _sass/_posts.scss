@@ -24,6 +24,10 @@
   font-size: 0.8rem;
 }
 
+.post-header {
+  padding-top: $space-4;
+}
+
 .post-footer {
   @extend .italic;
 

@@ -3,6 +3,7 @@ layout:     post
 title:      My Writing Philosophy
 date:       2024-01-15
 summary:    What I'm trying to get by writing short stories/where I want to eventually go with my writing.
+collection: Misc
 categories: writing
 ---
 

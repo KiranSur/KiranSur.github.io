@@ -16,6 +16,9 @@ MIT License https://opensource.org/licenses/MIT
 html, body {
   height: auto;
   min-height: 100%;
+  background-color: $page-color;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
 }
 
 img {

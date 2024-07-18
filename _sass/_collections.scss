@@ -1,0 +1,145 @@
+$collection-container-height: 32rem;
+$collection-container-width: 36rem;
+$preview-square-size: 15.3rem;
+
+.spotlight-title {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    width: max-content;
+}
+
+.collection-image-intro a {
+    text-decoration: none;
+    background-image: none;
+    text-shadow: none;
+    font-size: 0.8rem;
+}
+
+.spotlight-collection {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    text-decoration: none;
+    color: lightsalmon;
+    background-color: black;
+}
+
+.spotlight-storynum {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    text-decoration: none;
+    border-left: 1px solid black;
+    color: black;
+}
+
+.spotlight-info {
+    padding: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+}
+
+.p-special-spotlight {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    padding-top: 0.7rem;
+    margin-bottom: 0;
+}
+
+.p-spotlight-abstract {
+    padding-top: 0.6rem;
+    font-size: 0.8rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.p-preview-title {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2rem;
+    padding-top: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+.p-preview-text {
+    padding-top: 0.6rem;
+    padding-bottom: 2.4rem;
+    font-size: 0.8rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.inner-preview {
+    padding: 1rem;
+    display: block;
+}
+
+.inner-preview hr {
+    border-color: black;
+    margin: 0;
+}
+.spotlight-info hr {
+    border-color: black;
+    margin: 0;
+}
+
+.spotlight-check-it-out {
+    text-align: right;
+    font-size: 0.8rem;
+    color: black;
+    transition: transform .5s ease;
+}
+
+.collection-image-intro {
+    border: 1px solid black;
+    background-color: lightsalmon;
+    margin-right: 1rem;
+    overflow: auto;
+    height: $collection-container-height;
+    width: $collection-container-width;
+}
+
+.square-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.collection-container {
+    display: flex;
+    height: $collection-container-height;
+    align-self: center;
+    background-color: $page-color;
+    padding-bottom: 1rem;
+}
+
+.collection-previews-container {
+    align-self: flex-end;
+    overflow-y: auto;
+    height: $collection-container-height;
+    padding-top: 10rem;
+}
+
+.collection-previews-container::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.collection-previews {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    align-self: flex-end;
+}
+
+.collection-preview-square {
+    width: $preview-square-size;
+    height: $preview-square-size;
+    border: 1px solid black;
+}
+
+@media (max-width: 80rem) {
+    .collection-previews-container {
+        display: none;
+    }
+}

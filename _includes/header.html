@@ -1,11 +1,15 @@
-<header class="site-header px2 px-responsive">
-  <div class="mt2 wrap">
+<header class="site-header px-responsive">
+  <div class="mt1 wrap">
     <div class="measure">
-      
-      <nav class="site-nav">
-        {% include navigation.html %}
-      </nav>
-      <div class="clearfix"></div>
+      <div class="header-title">
+        <a href="{{ "/" | relative_url }}" class="site-title">
+          <img src="/images/sloth.svg" height="65em" width="65em;">
+        </a>
+        <p style="font-size: 0.8rem; margin-bottom: 0.3rem;">Kiran <br> Suresh</p>
+      </div>
     </div>
   </div>
+  <nav class="site-nav">
+    {% include navigation.html %}
+  </nav>
 </header>

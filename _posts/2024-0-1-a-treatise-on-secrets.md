@@ -3,10 +3,13 @@ layout:     post
 title:      A Treatise on Secrets
 date:       2024-01-16
 summary:    The first short story in the Andra collection! And the first one I'm posting online :^)
+collection: Andra
 categories: writing
 ---
 
-It's often said that half of the modern world is derived from bayzel. They're a crutch, but one necessitated by an age hidden from prosperity by a veil of domesticated despair. Under their leaves we've seen dead languages revived, forgotten civilizations unearthed, revelations of philosopher kings of old told anew in the public square. They hold secrets not limited in size nor shape, in field nor importance. The conquest of Drawt was written an epic until Terrhaven of Botanica discovered a sealed account of his slave empire under a bayzel.
+It's often said that half of the modern world is derived from bayzel. They're a crutch, but one necessitated by an age hidden from prosperity by a veil of domesticated despair. 
+
+Under their leaves we've seen dead languages revived, forgotten civilizations unearthed, revelations of philosopher kings of old told anew in the public square. The conquest of Drawt was written an epic until Terrhaven of Botanica discovered a sealed account of his slave empire under a bayzel.
 
 But, for all that they've propped up the modern scholarly world, little is known about the true nature of the *Bayzelis Vetus*. What fulfills their predisposition for secrets? 
 

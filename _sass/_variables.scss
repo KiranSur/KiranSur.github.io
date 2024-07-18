@@ -24,7 +24,8 @@ $h1-responsive-max: 3.84rem !default;
 $abbr-border-bottom: 1px black dotted;
 
 // Page width
-$measure-width: 42rem !default;
+$measure-width: 69rem !default;
+$aggro-measure-width: 52rem;
 
 // Viewport widths
 $viewport-small: 32em;
@@ -118,10 +119,12 @@ $header-color: $dark-gray;
 $header-bg-color: #fafafa;
 $header-font-weight: 300;
 
+$page-color: #fffaf0;
+
 // Nav
 $nav-color: $mid-gray;
-$nav-link-color: #444;
-$nav-padding: $space-2;
+$nav-link-color: #292828;
+$nav-padding: 0;
 $nav-link-padding-x: $space-2;
 $nav-link-border-bottom: 2px solid #35bb8e;
 $nav-active-border-bottom: 2px solid #35bb8e;

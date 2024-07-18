@@ -4,34 +4,43 @@ title: Writing
 permalink: /writing/
 tags: writing
 ---
-{% assign posts_count = paginator.posts | size %}
 
-<div class="home">
-  {% if posts_count > 0 %}
-    <div class="posts">
-      {% for post in paginator.posts %}
-        <div class="post py3">
-          <p class="post-meta">
-            {% if site.date_format %}
-              {{ post.date | date: site.date_format }}
-            {% else %}
-              {{ post.date | date: "%b %-d, %Y" }}
-            {% endif %}
-	        </p>
-          <a href="{{ post.url | relative_url }}" class="post-link"><h3 class="h2 post-title">{{ post.title }}</h3></a>
-            <span class="post-summary">
-              {% if post.summary %}
-                {{ post.summary }}
-              {% else %}
-                {{ post.excerpt }}
-              {% endif %}
-            </span>
+  <div class="collection-container">
+      <div class="collection-image-intro">
+        <img class="square-image" src="/images/qtree.jpg">
+
+        <div class="spotlight-info">
+          <a class="spotlight-title" href="/writing/a-treatise-on-secrets.html">
+            <div class="spotlight-collection">Andra</div>
+            <div class="spotlight-storynum">Story One</div>
+          </a>
+          <p class="p-special-spotlight">A Treatise on Secrets</p>
+          <hr>
+          <p class="p-spotlight-abstract">
+            Trees are trees. Bark and leaves, squirrels and seeds, everything in between. But why do some hold secrets...? 
+          </p>
         </div>
-      {% endfor %}
-    </div>
+      </div>
 
-    {% include pagination.html %}
-  {% else %}
-    <h1 class='center'>{{ site.text.index.coming_soon }}</h1>
-  {% endif %}
-</div>
+      <div class="collection-previews-container">
+          <div class="collection-previews">
+              <div class="collection-preview-square">
+                <div class="inner-preview">
+                  <p class="p-preview-title">My Writing Philosophy</p>
+                  <hr>
+                  <p class="p-preview-text">
+                    Some words about where I'm at with my writing and where I want to be in the future. 
+                  </p>
+                  <a href="/writing/my-writing-philosophy.html" style="padding-left: 11rem; background-image: none;">
+                    <img src="/images/spiral.svg" height="30em" width="30em">
+                  </a>
+                </div>
+              </div>
+              <div class="collection-preview-square"></div>
+              <div class="collection-preview-square"></div>
+              <div class="collection-preview-square"></div>
+          </div>
+      </div>
+  </div>
+
+<p style="text-align: center; padding-top: 1rem; padding-bottom: 1rem;">Hi! This style was very heavily inspired by worksinprogress.co -- they have some amazing articles, check them out!!</p>

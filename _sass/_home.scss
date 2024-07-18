@@ -1,0 +1,60 @@
+$home-container-height: 27rem;
+$home-container-width: 40rem;
+
+.site-intro {
+    margin-top: 1rem;
+}
+
+.site-intro-square {
+    // border: 1px solid black;
+    // background-color: #fbdca7;
+    overflow: auto;
+    height: $home-container-height;
+    width: $home-container-width;
+}
+
+.home-box {
+    display: flex;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 8rem;
+}
+
+.home-container {
+    display: flex;
+    height: $home-container-height;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+.home-previews-container {
+    align-self: flex-end;
+    overflow-y: auto;
+    height: $home-container-height;
+}
+
+.home-previews-container::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.home-previews {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    align-self: flex-end;
+}
+
+.home-preview-square {
+    width: 13rem;
+    height: 13rem;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+@media (max-width: 80rem) {
+    .home-previews-container {
+        display: none;
+    }
+}

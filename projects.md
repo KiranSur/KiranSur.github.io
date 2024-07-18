@@ -13,6 +13,7 @@ Hello! Here are some projects I've worked on :D
 [Ditto](https://github.com/callaunchpad/Ditto)
 - Trained an ML model (CycleGAN/CUT architectures) to convert pictures of pets into pokemon-ified versions!
 - Built a [backend](https://github.com/KiranSur/ditto_backend) to host the model online
+- A (very compressed/cursed) version can be found [here](https://huggingface.co/spaces/Launchpad/ditto). The results aren't crazy but were pretty cool for a time right before the big diffusion boom!
 
 [Neural Radiance Fields](https://inst.eecs.berkeley.edu/~cs180/fa23/upload/files/proj5/kirans/)
 - Implemented the Neural Radiance Fields (NeRF) [paper](https://arxiv.org/abs/2003.08934) to create 3D views of objects from 2D pictures

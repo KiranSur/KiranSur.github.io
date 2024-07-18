@@ -6,3 +6,10 @@
 .clearfix:after {
   clear: both;
 }
+
+.clearfix {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 0;
+  padding: 0;
+}
