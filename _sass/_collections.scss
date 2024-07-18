@@ -49,6 +49,19 @@ $preview-square-size: 15.3rem;
     margin-bottom: 0;
 }
 
+.p-special-spotlight-big-blog {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.4rem;
+    padding-top: 0.7rem;
+    margin-bottom: 0;
+}
+
+.p-spotlight-abstract-big-blog {
+    padding-top: 0.6rem;
+    font-size: 0.8rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .p-spotlight-abstract {
     padding-top: 0.6rem;
     font-size: 0.8rem;
@@ -98,6 +111,21 @@ $preview-square-size: 15.3rem;
     max-width: $collection-container-width;
 }
 
+.blog-collection-wrapper {
+    border: 1px solid black;
+    background-color: lightsalmon;
+    max-height: 100%; 
+    max-width: $collection-container-width;
+    position: relative;
+}
+
+.blog-collection-wrapper a {
+    text-decoration: none;
+    background-image: none;
+    text-shadow: none;
+    font-size: 0.8rem;
+}
+
 .square-image {
     width: 100%;
     object-fit: cover;
@@ -111,6 +139,15 @@ $preview-square-size: 15.3rem;
     background-color: $page-color;
     padding-bottom: 1rem;
     overflow-y: visible;
+}
+
+.blog-collection-container {
+    display: flex;
+    max-width: 100%;
+    max-height: $collection-container-height;
+    align-self: center;
+    background-color: $page-color;
+    padding-bottom: 1rem;
 }
 
 .collection-previews-container {
