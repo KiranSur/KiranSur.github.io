@@ -8,9 +8,9 @@ $home-container-width: 40rem;
 .site-intro-square {
     // border: 1px solid black;
     // background-color: #fbdca7;
-    overflow: auto;
-    height: $home-container-height;
-    width: $home-container-width;
+    // overflow: auto;
+    max-height: $home-container-height;
+    max-width: $home-container-width;
 }
 
 .home-box {
@@ -19,7 +19,7 @@ $home-container-width: 40rem;
     padding-right: 2rem;
     margin-top: 8rem;
     margin-bottom: 3rem;
-    
+    // align-items: center;
 }
 
 .home-container {
@@ -53,10 +53,4 @@ $home-container-width: 40rem;
     height: 13rem;
     background-color: transparent;
     border: 1px solid black;
-}
-
-@media (max-width: 80rem) {
-    .home-previews-container {
-        display: none;
-    }
 }

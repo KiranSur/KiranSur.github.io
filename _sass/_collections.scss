@@ -94,9 +94,8 @@ $preview-square-size: 15.3rem;
     border: 1px solid black;
     background-color: lightsalmon;
     margin-right: 1rem;
-    overflow: auto;
-    height: $collection-container-height;
-    width: $collection-container-width;
+    max-height: $collection-container-height;
+    max-width: $collection-container-width;
 }
 
 .square-image {
@@ -106,10 +105,11 @@ $preview-square-size: 15.3rem;
 
 .collection-container {
     display: flex;
-    height: $collection-container-height;
+    max-height: $collection-container-height;
     align-self: center;
     background-color: $page-color;
     padding-bottom: 1rem;
+    overflow: auto;
 }
 
 .collection-previews-container {
@@ -126,8 +126,8 @@ $preview-square-size: 15.3rem;
 
 .collection-previews {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-auto-columns: repeat(2, 1fr);
+    grid-auto-rows: repeat(2, 1fr);
     gap: 1rem;
     align-self: flex-end;
 }
@@ -138,7 +138,7 @@ $preview-square-size: 15.3rem;
     border: 1px solid black;
 }
 
-@media (max-width: 80rem) {
+@media (max-width: 72rem) {
     .collection-previews-container {
         display: none;
     }
