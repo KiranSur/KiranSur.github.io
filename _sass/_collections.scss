@@ -94,7 +94,7 @@ $preview-square-size: 15.3rem;
     border: 1px solid black;
     background-color: lightsalmon;
     margin-right: 1rem;
-    max-height: $collection-container-height;
+    max-height: 100%; 
     max-width: $collection-container-width;
 }
 
@@ -105,17 +105,18 @@ $preview-square-size: 15.3rem;
 
 .collection-container {
     display: flex;
+    max-width: 100%;
     max-height: $collection-container-height;
     align-self: center;
     background-color: $page-color;
     padding-bottom: 1rem;
-    overflow: auto;
+    overflow-y: visible;
 }
 
 .collection-previews-container {
     align-self: flex-end;
     overflow-y: auto;
-    height: $collection-container-height;
+    max-height: $collection-container-height;
     padding-top: 10rem;
 }
 
