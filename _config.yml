@@ -7,7 +7,6 @@ baseurl:     ""
 url:         "https://kiransur.github.io"
 date_format: "%b %-d, %Y"
 header_pages:
- - reading.md
  - writing/index.html
  - techblog/index.html
 
@@ -20,9 +19,6 @@ extended_fonts: true
 enable_anchorjs: false
 
 text:
-  pagination:
-    newer: 'Newer'
-    older: 'Older'
   post:
     updated:        'Updated'
     minute_read:    'minute read'
@@ -36,8 +32,14 @@ markdown:     kramdown
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
 permalink:    none
-paginate:     4
-paginate_path: "/writing/page:num/"
+
+collections:
+  andra:
+    output: true
+    permalink: /writing/andra/:title/
+  techblog:
+    output: true
+    permalink: /techblog/:title/
 sass:
   style: compressed
 plugins:

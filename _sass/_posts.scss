@@ -18,6 +18,12 @@
   margin-top: 0;
   font-weight: 500;
   color: #333;
+  font-size: 1.5em;
+}
+
+.post-link:hover, .post-link:focus {
+  text-decoration: none;
+  color: inherit;
 }
 
 .post-summary {
@@ -49,6 +55,17 @@
   padding: .25em 0;
   color: rgb(205, 81, 81);
   font-style: italic;
+  font-size: 0.8em;
+}
+
+.post-meta-1 {
+  width: auto;
+  font-weight: 300;
+  margin: 0;
+  padding: .25em 0;
+  color: rgb(42, 161, 70);
+  font-style: italic;
+  font-size: 0.8em;
 }
 
 .related-post-title {

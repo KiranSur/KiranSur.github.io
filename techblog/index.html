@@ -4,42 +4,27 @@ title: Technical Blog
 permalink: /techblog/
 tags: technical
 ---
-
-<div class="blog-collection-container">
-    <div class="blog-collection-wrapper bg-blu">
-      <div class="spotlight-info">
-        <a class="spotlight-title" href="https://kiransur.github.io/frequencyfun/">
-          <div class="spotlight-collection text-blu">Project</div>
-          <div class="spotlight-storynum">Classical CV</div>
-        </a>
-        <p class="p-special-spotlight-big-blog">An analysis of convolutions, frequencies, and their applications in blending</p>
-        <hr>
-        <p class="p-spotlight-abstract-big-blog">
-            In the status quo where tasks are ubiquitously pushed to large, generalizable models, many constrained tasks
-          have become increasingly over-engineered. How powerful are convolutions? Fourier transforms? What modern computer vision tasks can we 
-          achieve through simple frequency manipulation? Let's see what we can do by stripping down to the bare bones of image manipulation!
+<div class="home">
+  <div class="posts">
+      {% assign sorted_articles = site.techblog | sort: 'date' | reverse %}
+      {% for post in sorted_articles %}
+      <div class="post py2">
+        <p class="post-meta-1">
+          {% if site.date_format %}
+            {{ post.date | date: site.date_format }}
+          {% else %}
+            {{ post.date | date: "%b %-d, %Y" }}
+          {% endif %}
         </p>
+        <a href="{{ post.url | relative_url }}" class="post-link"><h3 class="h2 post-title">{{ post.title }}</h3></a>
+          <span class="post-summary">
+            {% if post.summary %}
+              {{ post.summary }}
+            {% else %}
+              {{ post.excerpt }}
+            {% endif %}
+          </span>
       </div>
-    </div>
-</div>
-
-<div class="blog-grid-container">
-    <div class="blog-collection-wrapper bg-orang">
-            <div class="spotlight-info">
-                <a class="spotlight-title" href="https://kiransur.github.io/nerf/">
-                  <div class="spotlight-collection text-orang">Paper</div>
-                  <div class="spotlight-storynum">Implementation</div>
-                </a>
-                <p class="p-special-spotlight-small-blog">Neural Radiance Fields</p>
-            </div>
-    </div>
-    <div class="blog-collection-wrapper bg-salm">
-        <div class="spotlight-info">
-            <a class="spotlight-title" href="https://kiransur.github.io/styletransfer/">
-              <div class="spotlight-collection text-salm">Paper</div>
-              <div class="spotlight-storynum">Implementation</div>
-            </a>
-            <p class="p-special-spotlight-small-blog">Iterative Texture and Style Transfer</p>
-        </div>
-</div>
+    {% endfor %}
+  </div>
 </div>
