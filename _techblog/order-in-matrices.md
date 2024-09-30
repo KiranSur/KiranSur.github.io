@@ -13,7 +13,7 @@ At first glance, that seems pretty unintuitive. Regardless of what's in a pair o
 
 The story gets more interesting at the hardware level!
 
-When a matrix is sparse (more zeroes!), a GPU needs less transistor flips to do multiplications/additions with it (think an accumulator being able to stay at zero). This results in less power draw, causing less power-limit based throttling of clock speed, which in turn increases performance. Thus, more sparse matrices can have faster matmuls than their normal counterparts. When you break it down, its a pretty intuitive causal sequence!
+When a matrix is sparse (more zeroes!), a GPU needs less transistor flips to do multiplications/additions with it (think an accumulator being able to stay at zero). This results in less power draw, causing less power-limit based throttling of clock speed, which in turn increases performance. Thus, more sparse matrices can have faster matmuls than their normal counterparts. When you break it down, it's a pretty intuitive causal sequence!
 
 But, it also begs some other salient questions. If matmuls between sparse matrices tend to take less power, do particular orderings of matmuls lead to better performance (think load balancing)? At what frequency do GPU's regulate clock speed? How does one benchmark the FLOPs for a matmul in the first place?
 
