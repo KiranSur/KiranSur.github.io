@@ -7,7 +7,7 @@ collection: Andra
 categories: writing
 ---
 
-It's often said that half of the modern world is derived from bayzel. They are a crutch, but one that has inspired hope in an age hidden from prosperity by a veil of domesticated despair.
+It's often said that half the modern world is derived from bayzel. They're a crutch, but one that has inspired hope in an age hidden from prosperity by a veil of domesticated despair.
 
 Under their leaves we've seen dead languages revived, forgotten civilizations unearthed, revelations of philosopher kings of old told anew in the public square. The conquest of Drawt was written an epic until Terrhaven of Botanica discovered a sealed account of his slave empire under a bayzel.
 
